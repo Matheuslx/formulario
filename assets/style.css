@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@media(max-width: 699px){
+    .container{
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.flex{
+    display: flex;
+}
+
+body{
+display: flex;
+justify-content: center;
+font-family: 'Rubik', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 700px;
+    margin-top: 50px;
+    padding: 0px;
+    
+}
+
+.common_styles{
+    min-width: 350px;
+    max-width: 350px;
+    height: 550px;
+    border-radius: 5px;
+}
+
+.login_form{
+    flex: 1;
+    
+    
+    
+
+}
+
+.register_form{
+    flex: 1;
+    background:linear-gradient(90deg,rgb(2, 30, 88), rgb(44, 170, 243));
+    color: #ffff;
+
+    
+}
+
+.topo_login_form{
+     margin-bottom: 10px;
+}
+
+.login_logo{
+    
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 0px;
+
+}
+
+.create_logo{
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.login_form_title{
+    
+    justify-content: center;
+    font-size: 30px;
+}
+
+.login_form_text{
+
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.login_field{
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 17px;
+    flex-direction: column;
+    align-items: left;
+
+}
+
+.form_field{
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+.field_id,
+.field_password{
+    width: 100%;
+    border-radius: 2px;
+    border: 0;
+    height: 40px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: rgb(236, 228, 228);
+    transition-duration:50ms ;
+
+}
+
+.field_id:focus,
+.field_password:focus{
+    border-bottom:2px solid rgb(44, 170, 243);
+    
+
+    
+
+
+}
+.user_logo,
+.password_logo,
+.mail_logo{
+  
+    position: absolute;
+    right:7px ; 
+    bottom: 7px; 
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+.password_tips{
+    flex-direction: column;
+}
+
+.label_remember_password{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+button{
+    align-items: center;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px 10px;
+    margin-top: 30px;
+    width: 150px;
+    transition-duration: 500ms;
+}
+.login_button{
+    background: #4d61fc;
+    color: #fff;
+    padding: 15px 45px;
+    width: 150px;
+}
+
+.create_button{
+    background: #fafafa;
+    color: rgb(44, 170, 243)
+}
+
+.create_button:hover{
+    background: #d4d4d4;
+    transform: translateY(-2px);
+}
+.login_button:hover{
+    background: #2841fc;
+    transform: translateY(-2px);
+}
+
+a{
+    color: #4d61fc;
+}
